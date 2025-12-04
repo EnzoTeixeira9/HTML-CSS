@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(70, 70, 70);
+}
+
+h1{
+    color: white;
+    text-align: left;
+}
+
+h2{
+    color: white;
+    text-align: left;
+}
+
+h3{
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+p{
+    color: white;
+    margin-left: 50px;
+}
+
+.smalltext{
+    color: white;
+    margin-left: 10px;
+    border: none;
+}
+
+article{
+    border: 10px dashed orange;
+    margin: 20px;
+}
+    
+.article1{
+    background-color: rgba(128, 128, 128, 0.200);
+    background-image: url("linux.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 200px;
+    padding: 20px;
+    background-clip:border-box;
+}
+.article2{
+    background-color: rgba(0, 128, 0, 0.200);
+    background-image: url("linux.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 300px;
+    padding: 20px;
+    background-clip:padding-box;
+}
+
+.article3{
+    background-color: rgba(0, 0, 255, 0.200);
+ background-image: url("linux.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 150px;
+    padding: 20px;
+    background-clip:content-box;
+}

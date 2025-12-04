@@ -1,0 +1,82 @@
+.titre {
+    font-size: 20px;
+    font-family: Arial;
+    text-align : center;
+    color : red;
+    background-color: yellow;
+}
+
+.auteur1 {
+    font-family: Arial;
+    text-align : center;
+    color : purple;
+    font-size : 16px;
+    margin-top:20px
+}
+
+.auteur2 {
+    font-size: 16px;
+    font-family: Arial;
+    text-align : center;
+    color : purple;
+    margin-bottom:20px
+}
+
+.préface {
+    text-indent : 20px;
+    font-size: 11px;
+    font-family: Arial;
+    margin-bottom:25px;
+    margin-top:25px;
+}
+
+.texteNormal {
+    margin-bottom:20px;
+    margin-top:10px;
+    text-indent:12px; 
+}
+
+.texteNormal:hover {
+    font-style: italic;
+}
+
+.ol {
+    font-size: 15px;
+    font-family: Arial;
+    color : blue;
+    font-weight : bold;
+}
+
+.ol:hover {
+    color : green;
+    text-decoration : underline
+}
+
+.italiqueTimes {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom:20px;
+    margin-top:10px;
+    font-style : italic;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+.ul {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+
+
+.italique {
+    font-style : italic;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.couleurRGB {
+    margin-bottom:20px;
+    margin-top:10px;
+    color : rgb(103, 166, 187);
+}

@@ -1,0 +1,35 @@
+h1 {
+    color: purple;
+}
+
+.grospingouin {
+    background-color: green;
+    background-image: url("pingouin.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.pingouin {
+    background-image: url("pingouin.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fit;
+}
+
+section {
+    background-color: salmon;
+    color : white;
+    opacity: 0.8;
+}
+
+a {
+    font: italic;
+}
+
+article {
+    background-color: red;
+    color :grey;
+    opacity: 0.7;
+}
