@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #101010;
+  --text-color: white;
+  --main-color: #8E2DE2;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+:root {
+  --scroll-offset: 8.4rem;
+}
+
+html {
+  scroll-padding-top: var(--scroll-offset);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 3rem 12%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+#menu-icon {
+  font-size: 3.5rem;
+  color: var(--main-color);
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: clamp(2.2rem, 2.6vw, 3rem);
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+span {
+  background: linear-gradient(270deg,
+      #8E2DE2 10%,
+      #4A00E0 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.gradient-btn {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(270deg,
+      #8E2DE2 10%,
+      #4A00E0 100%);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+  text-wrap: nowrap;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12%;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.home-content h2 {
+  font-size: clamp(3.6rem, 6vw, 7.5rem);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-content h3 {
+  margin: 1rem 0;
+  font-size: clamp(1.8rem, 3vw, 4rem);
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.home-img img {
+  width: min(35vw, 360px);
+  max-width: 42vh;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover {
+  box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 3rem 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: var(--text-color);
+  background-color: var(--main-color);
+  transform: scale(1.2)translateY(-5px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.067);
+  box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+}
+
+.a-propos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: var(--bg-color);
+}
+
+.a-propos-img img {
+  width: min(32vw, 360px);
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+
+.a-propos-img img:hover {
+  box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+}
+
+.about-content h2 {
+  font-size: clamp(2.4rem, 4vw, 6.5rem);
+  text-align: left;
+}
+
+.about-content p {
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+}
+
+.about-content .btn {
+  margin: 3rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+.pdf-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.pdf-modal[hidden] {
+  display: none;
+}
+
+.pdf-modal-content {
+  width: 90vw;
+  height: 90vh;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
+}
+
+.pdf-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: transparent;
+  border: 0;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px
+}
+
+#pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: 0
+}
+
+.certifs-container {
+  display: flex;
+  gap: 3.2rem;
+  margin-top: 3.6rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.cert-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 3.2rem;
+  min-width: 26rem;
+  width: clamp(26rem, 32%, 36rem);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  text-align: center;
+}
+
+.cert-card i {
+  font-size: 5rem;
+  color: var(--main-color);
+}
+
+.cert-card h4 {
+  font-size: 2.6rem;
+  margin-top: 0.6rem;
+}
+
+.cert-card:hover,
+.cert-card:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(142, 45, 226, 0.12);
+  outline: none;
+}
+
+.heading {
+  font-size: clamp(3.2rem, 4.4vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.3px;
+}
+
+.pdf-viewer-controls {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+.pdf-nav {
+  background: rgba(0, 0, 0, 0.66);
+  color: #fff;
+  border: 0;
+  font-size: 3rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pdf-caption {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .certifs-container {
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .cert-card {
+    width: 100%;
+    min-width: auto;
+    padding: 1.8rem;
+  }
+
+  .pdf-viewer-controls {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+  }
+
+  .card,
+  .project-card,
+  .passion-card {
+    padding: 1.6rem;
+  }
+
+  .project-card h4,
+  .card h4,
+  .passion-card h4 {
+    font-size: 1.8rem;
+  }
+
+  .project-card p,
+  .card p,
+  .passion-card p {
+    font-size: 1.5rem;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.card,
+.project-card,
+.passion-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.project-card h4,
+.card h4,
+.passion-card h4 {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-card p,
+.card p,
+.passion-card p {
+  font-size: 1.8rem;
+  color: #e6e6e6;
+}
+
+.project-card p {
+  margin-bottom: 1.6rem;
+}
+
+.muted {
+  color: #cfcfcf;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn.small {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .btn.small {
+  margin-top: auto;
+  align-self: left;
+}
+
+.passion-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.passion-card i {
+  font-size: 4.6rem;
+  color: var(--main-color);
+}
+
+.empty-note {
+  color: #999;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+
+  .card,
+  .project-card,
+  .passion-card {
+    padding: 1.4rem;
+  }
+
+  .project-card h4,
+  .passion-card h4 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 2.4rem 6%;
+  }
+
+  :root {
+    --scroll-offset: 7rem;
+  }
+
+  section {
+    padding: 8rem 6%;
+  }
+
+  .home {
+    gap: 6rem;
+  }
+
+  .home-img img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 75%;
+    height: 100vh;
+    background: var(--second-bg-color);
+    flex-direction: column;
+    padding: 7rem 2.5rem;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: right 0.28s ease-in-out;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin-left: 0;
+    font-size: 1.9rem;
+  }
+
+  .header {
+    padding: 1.6rem 4%;
+  }
+
+  :root {
+    --scroll-offset: 6.2rem;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    padding-top: 12rem;
+    gap: 3rem;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 60vw;
+    max-width: 320px;
+  }
+
+  .a-propos {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 6rem 5%;
+  }
+
+  .a-propos-img img {
+    width: 50vw;
+    max-width: 260px;
+  }
+
+  .pdf-modal-content {
+    width: 96vw;
+    height: 92vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-content h2 {
+    font-size: clamp(3rem, 7.5vw, 4.6rem);
+  }
+
+  .home-content h3 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+  }
+
+  .navbar {
+    width: 85%;
+  }
+}

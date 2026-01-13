@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="#" class="logo">
+      Enzo <span>Teixeira</span>
+    </a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#">Acceuil</a>
+      <a href="#a-propos">À Propos</a>
+      <a href="#Certifications">Certifications</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#veille">Veille</a>
+      <a href="#projets">Projets</a>
+      <a href="#passions">Passions</a>
+    </nav>
+
+    <button class="gradient-btn">Contactez-moi</button>
+
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h2>Salut, C'est <span>Enzo</span></h2>
+      <h3>Bienvenue sur mon <span>Portfolio</span></h3>
+
+      <div class="social-icons">
+        <a href="https://github.com/EnzoTeixeira9" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a href="https://www.instagram.com/pxbyenzo/" target="_blank">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+
+    </div>
+
+    <div class="home-img">
+      <img src="pdp.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="a-propos" id="a-propos">
+
+    <div class="a-propos-img">
+      <img src="IMG_4847.JPG" alt="">
+    </div>
+
+    <div class="about-content">
+      <h2>À Propos <span>de moi</span></h2>
+      <p>Je suis étudiant en BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et
+        Applications Métiers), au lycée Louis Pergaud à Besançon.
+        Je m’intéresse au développement d’applications, à la programmation et à la création de solutions informatiques
+        adaptées aux besoins des entreprises.
+
+        Au cours de ma formation, j’apprends différents langages de programmation, la gestion de bases de données, ainsi
+        que la conception et la maintenance d’applications. Je développe aussi des compétences en analyse, en travail
+        d’équipe et en résolution de problèmes.
+
+        Mon objectif est de poursuivre dans le domaine de l’informatique, notamment dans le développement IA ou la
+        cybersécurité.</p>
+    </div>
+    <button id="open-pdf" class="btn">Mon CV</button>
+  </section>
+
+  <section class="certifs" id="Certifications">
+
+    <h2 class="heading">Certifications</h2>
+
+    <div class="certifs-container">
+      <div class="cert-card" data-pdfs="cnil-1.pdf,cnil-2.pdf,cnil-3.pdf,cnil-4.pdf,cnil-5.pdf,cnil-6.pdf"
+        data-title="CNIL" tabindex="0" role="button" aria-pressed="false">
+        <i class="bx bxs-shield"></i>
+        <h4>CNIL</h4>
+      </div>
+
+      <div class="cert-card" data-pdf="anssi.pdf" data-title="ANSSI" tabindex="0" role="button" aria-pressed="false">
+        <i class="bx bxs-lock"></i>
+        <h4>ANSSI</h4>
+      </div>
+
+      <div class="cert-card" data-pdf="ebios.pdf" data-title="EBIOS" tabindex="0" role="button" aria-pressed="false">
+        <i class="bx bxs-certification"></i>
+        <h4>EBIOS</h4>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="experiences" id="experiences">
+    <h2 class="heading">Expériences</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Stage 1ere annee</h4>
+        <p class="muted">Entreprise — Date</p>
+        <p>...</p>
+      </div>
+      <div class="card">
+        <h4>Stage 2eme annee</h4>
+        <p class="muted">Entreprise — Date</p>
+        <p>...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="veille" id="veille">
+    <h2 class="heading">Veille</h2>
+    <div class="empty-note">Aucune veille pour le moment.</div>
+  </section>
+
+  <section class="projets" id="projets">
+    <h2 class="heading">Projets</h2>
+    <div class="card-grid">
+      <div class="project-card">
+        <h4>Projet 1</h4>
+        <p class="muted">Mastermind - PHP</p>
+        <p>Realisation de Mastermind en PHP</p>
+        <a href="" class="btn small">Voir</a>
+      </div>
+      <div class="project-card">
+        <h4>Projet 2</h4>
+        <p class="muted">...</p>
+        <p>...</p>
+        <a href="" class="btn small">Voir</a>
+      </div>
+      <div class="project-card">
+        <h4>Projet 3</h4>
+        <p class="muted">...</p>
+        <p>...</p>
+        <a href="" class="btn small">Voir</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="passions" id="passions">
+    <h2 class="heading">Passions</h2>
+    <div class="card-grid">
+      <div class="passion-card">
+        <i class="bx bxs-music"></i>
+        <h4>Musique</h4>
+        <p>j'adore écouter mais aussi faire de la musique en tout genre.</p>
+      </div>
+      <div class="passion-card">
+        <i class="bx bxs-camera"></i>
+        <h4>Photographie</h4>
+        <p>Rien de mieux qu'un bel endroit et un appareil photo.</p>
+      </div>
+      <div class="passion-card">
+        <i class="bx bxs-run"></i>
+        <h4>Sport</h4>
+        <p>j'adore les sports collectifs comme le volleyball ou le football.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="pdf-modal" class="pdf-modal" hidden>
+    <div class="pdf-modal-content">
+      <button id="close-pdf" class="pdf-close" aria-label="Fermer">×</button>
+      <div class="pdf-viewer-controls">
+        <button id="prev-pdf" class="pdf-nav" aria-label="Précédent">‹</button>
+        <div id="pdf-caption" class="pdf-caption"></div>
+        <button id="next-pdf" class="pdf-nav" aria-label="Suivant">›</button>
+      </div>
+      <iframe id="pdf-frame" src="" title="PDF viewer"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
